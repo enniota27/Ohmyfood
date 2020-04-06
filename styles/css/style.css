@@ -1,0 +1,32 @@
+header {
+  background-color: #579c87;
+  height: 100px;
+  text-align: center;
+}
+header .logo {
+  height: 50px;
+  margin-top: 25px;
+}
+
+footer {
+  background-color: #579c87;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+footer a {
+  color: #fdcb46;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section article {
+  height: 300px;
+  width: 262px;
+  background-color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

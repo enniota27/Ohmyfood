@@ -1,0 +1,32 @@
+$color-header:rgb(87,156,135);
+
+header {
+    background-color: $color-header;
+    height: 100px;
+    text-align: center;
+    .logo {
+        height: 50px;
+        margin-top:25px;
+    }
+}
+
+footer{
+    background-color: $color-header;
+    height:50px;
+    display:flex;
+    justify-content:space-between;
+    a {
+        color:rgb(253,203,70);
+    }
+}
+
+section {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    article {
+        height: 300px;
+        width: 262px;
+        background-color: red;
+    }
+}
