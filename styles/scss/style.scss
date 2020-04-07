@@ -1,7 +1,56 @@
-$color-header:rgb(87,156,135);
+$color-primary:rgb(87,156,135);
+
+@font-face {
+    font-family: 'ranchoregular';
+    src: url('../../fonts/ranchoregular/Rancho-Regular-webfont.eot');
+    src: url('../../fonts/ranchoregular/Rancho-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../../fonts/ranchoregular/Rancho-Regular-webfont.woff2') format('woff2'),
+        url('../../fonts/ranchoregular/Rancho-Regular-webfont.woff') format('woff'),
+        url('../../fonts/ranchoregular/Rancho-Regular-webfont.ttf') format('truetype'),
+        url('../../fonts/ranchoregular/Rancho-Regular-webfont.svg#ranchoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rochesterregular';
+    src: url('../../fonts/rochesterregular/Rochester-Regular-webfont.eot');
+    src: url('../../fonts/rochesterregular/Rochester-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/rochesterregular/Rochester-Regular-webfont.woff2') format('woff2'),
+         url('../../fonts/rochesterregular/Rochester-Regular-webfont.woff') format('woff'),
+         url('../../fonts/rochesterregular/Rochester-Regular-webfont.ttf') format('truetype'),
+         url('../../fonts/rochesterregular/Rochester-Regular-webfont.svg#rochesterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sevillanaregular';
+    src: url('../../fonts/sevillanaregular/Sevillana-Regular-webfont.eot');
+    src: url('../../fonts/sevillanaregular/Sevillana-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/sevillanaregular/Sevillana-Regular-webfont.woff2') format('woff2'),
+         url('../../fonts/sevillanaregular/Sevillana-Regular-webfont.woff') format('woff'),
+         url('../../fonts/sevillanaregular/Sevillana-Regular-webfont.ttf') format('truetype'),
+         url('../../fonts/sevillanaregular/Sevillana-Regular-webfont.svg#sevillanaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'berkshire_swashregular';
+    src: url('../../fonts/berkshire_swashregular/berkshireswash-regular-webfont.eot');
+    src: url('../../fonts/berkshire_swashregular/berkshireswash-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/berkshire_swashregular/berkshireswash-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/berkshire_swashregular/berkshireswash-regular-webfont.woff') format('woff'),
+         url('../../fonts/berkshire_swashregular/berkshireswash-regular-webfont.ttf') format('truetype'),
+         url('../../fonts/berkshire_swashregular/berkshireswash-regular-webfont.svg#berkshire_swashregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 header {
-    background-color: $color-header;
+    background-color: $color-primary;
     height: 100px;
     text-align: center;
     .logo {
@@ -11,22 +60,50 @@ header {
 }
 
 footer{
-    background-color: $color-header;
+    background-color: $color-primary;
     height:50px;
     display:flex;
     justify-content:space-between;
+    margin-top:100px;
     a {
         color:rgb(253,203,70);
     }
 }
 
-section {
+.container {
     display: flex;
-    flex-wrap:wrap;
-    justify-content:space-around;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
     article {
-        height: 300px;
-        width: 262px;
-        background-color: red;
+        margin-top: 100px;
+        height: 600px;
+        width: 525px;
+        text-align: center;
+        font-size: 30px;
+        display: flex; /* contexte sur le parent */
+        flex-direction: column; /* direction d'affichage verticale */
+        justify-content: center; /* alignement vertical */
+    }
+
+    #LNE {
+        background-color: rgb(252,223,219);
+        font-family: 'ranchoregular';
+        color: rgb(60,18,24);
+    }
+
+    #LCALF {
+        background-color: rgb(255,245,254);
+        font-family: 'rochesterregular';
+    }
+
+    #LDDP {
+        background-color: rgb(249,249,249);
+        font-family: 'sevillanaregular';
+    }
+
+    #LPDG {
+        background-color: rgb(253,253,253);
+        font-family: 'berkshire_swashregular';
     }
 }
