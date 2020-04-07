@@ -28,23 +28,26 @@
 }
 header {
   background-color: #579c87;
-  height: 100px;
+  height: 150px;
   text-align: center;
 }
 header .logo {
-  height: 50px;
-  margin-top: 25px;
+  height: 75px;
+  margin-top: 35px;
 }
 
 footer {
   background-color: #579c87;
-  height: 50px;
+  height: 75px;
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 75px;
 }
 footer a {
   color: #fdcb46;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 20px;
 }
 
 .container {
@@ -59,28 +62,76 @@ footer a {
   text-align: center;
   font-size: 30px;
   display: flex;
-  /* contexte sur le parent */
   flex-direction: column;
-  /* direction d'affichage verticale */
   justify-content: center;
-  /* alignement vertical */
+  box-shadow: 0 0.9px 2.4px rgba(0, 0, 0, 0.016), 0 2.2px 6px rgba(0, 0, 0, 0.022), 0 4.4px 12.2px rgba(0, 0, 0, 0.028), 0 9.1px 25.2px rgba(0, 0, 0, 0.034), 0 25px 69px rgba(0, 0, 0, 0.05);
 }
 .container #LNE {
   background-color: #fcdfdb;
   font-family: "ranchoregular";
   color: #3c1218;
 }
+.container #LNE img {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .container #LCALF {
   background-color: #fff5fe;
   font-family: "rochesterregular";
+}
+.container #LCALF h2 {
+  background: linear-gradient(to right, #c77412 0%, #7738cf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container #LCALF h3 {
+  color: #c77412;
 }
 .container #LDDP {
   background-color: #f9f9f9;
   font-family: "sevillanaregular";
 }
+.container #LDDP h2 {
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container #LDDP h3 {
+  color: #330867;
+}
 .container #LPDG {
   background-color: #fdfdfd;
   font-family: "berkshire_swashregular";
+}
+.container #LPDG h2 {
+  background: linear-gradient(to right, #337500 0%, #b6db9a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container #LPDG h3 {
+  color: #b6db9a;
+}
+
+h3 {
+  font-size: 45px;
+}
+
+.button {
+  text-decoration: none;
+  background-color: #579c87;
+  height: 60px;
+  width: 300px;
+  color: #fdcb46;
+  font-size: 35px;
+  text-align: center;
+  margin: auto;
+  margin-top: 75px;
+  border-radius: 10px;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
