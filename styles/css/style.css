@@ -26,26 +26,25 @@
   font-weight: normal;
   font-style: normal;
 }
-header {
+.tete {
   background-color: #579c87;
   height: 150px;
   text-align: center;
 }
-header .logo {
+.tete .logo {
   height: 75px;
   margin-top: 35px;
 }
 
-footer {
+.pied {
   background-color: #579c87;
   height: 75px;
   display: flex;
   justify-content: space-between;
   margin-top: 75px;
 }
-footer a {
+.pied a {
   color: #fdcb46;
-  text-decoration: none;
   font-size: 30px;
   margin: 20px;
 }
@@ -72,7 +71,6 @@ footer a {
   color: #3c1218;
 }
 .container #LNE img {
-  width: 100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -132,6 +130,52 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.menu {
+  font-size: 30px;
+  border-left: 20px;
+  box-shadow: 0 0.9px 2.4px rgba(0, 0, 0, 0.016), 0 2.2px 6px rgba(0, 0, 0, 0.022), 0 4.4px 12.2px rgba(0, 0, 0, 0.028), 0 9.1px 25.2px rgba(0, 0, 0, 0.034), 0 25px 69px rgba(0, 0, 0, 0.05);
+}
+.menu header {
+  text-align: center;
+  margin-top: 50px;
+}
+.menu header h2 {
+  margin-top: -10px;
+  font-size: 55px;
+}
+.menu > * {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.menu h2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: -10px;
+}
+.menu footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.menu footer #img-petit {
+  height: 45px;
+  margin: 0px;
+  margin-right: 10px;
+}
+.menu footer h3 {
+  font-size: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */
