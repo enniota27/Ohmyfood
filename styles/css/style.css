@@ -1,4 +1,11 @@
 @font-face {
+  font-family: "blokletters_balpenbalpen";
+  src: url("../../fonts/blokletters_balpenbalpen/Blokletters-Balpen-webfont.eot");
+  src: url("../../fonts/blokletters_balpenbalpen/Blokletters-Balpen-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/blokletters_balpenbalpen/Blokletters-Balpen-webfont.woff2") format("woff2"), url("../../fonts/blokletters_balpenbalpen/Blokletters-Balpen-webfont.woff") format("woff"), url("../../fonts/blokletters_balpenbalpen/Blokletters-Balpen-webfont.ttf") format("truetype"), url("../../fonts/blokletters_balpenbalpen/Blokletters-Balpen-webfont.svg#blokletters_balpenbalpen") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "ranchoregular";
   src: url("../../fonts/ranchoregular/Rancho-Regular-webfont.eot");
   src: url("../../fonts/ranchoregular/Rancho-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/ranchoregular/Rancho-Regular-webfont.woff2") format("woff2"), url("../../fonts/ranchoregular/Rancho-Regular-webfont.woff") format("woff"), url("../../fonts/ranchoregular/Rancho-Regular-webfont.ttf") format("truetype"), url("../../fonts/ranchoregular/Rancho-Regular-webfont.svg#ranchoregular") format("svg");
@@ -67,8 +74,10 @@
 }
 .container #LNE {
   background-color: #fcdfdb;
-  font-family: "ranchoregular";
   color: #3c1218;
+}
+.container #LNE h2 {
+  font-family: "ranchoregular";
 }
 .container #LNE img {
   margin-left: auto;
@@ -76,36 +85,36 @@
 }
 .container #LCALF {
   background-color: #fff5fe;
-  font-family: "rochesterregular";
 }
 .container #LCALF h2 {
   background: linear-gradient(to right, #c77412 0%, #7738cf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "rochesterregular";
 }
 .container #LCALF h3 {
   color: #c77412;
 }
 .container #LDDP {
   background-color: #f9f9f9;
-  font-family: "sevillanaregular";
 }
 .container #LDDP h2 {
   background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "sevillanaregular";
 }
 .container #LDDP h3 {
   color: #330867;
 }
 .container #LPDG {
   background-color: #fdfdfd;
-  font-family: "berkshire_swashregular";
 }
 .container #LPDG h2 {
   background: linear-gradient(to right, #337500 0%, #b6db9a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "berkshire_swashregular";
 }
 .container #LPDG h3 {
   color: #b6db9a;
@@ -158,10 +167,16 @@ h1 {
   margin-left: 100px;
   margin-right: 100px;
 }
-.menu h2 {
+.menu h3 {
   text-align: center;
   margin-top: 50px;
   margin-bottom: -10px;
+  font-family: "blokletters_balpenbalpen";
+  font-size: 30px;
+}
+.menu p {
+  font-family: "blokletters_balpenbalpen";
+  font-size: 20px;
 }
 .menu footer {
   display: flex;

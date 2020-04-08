@@ -1,41 +1,10 @@
 $color-primary:rgb(87,156,135);
 
+@import "fonts.scss";
+
 @mixin shadows {
     box-shadow: 0 0.9px 2.4px rgba(0, 0, 0, 0.016), 0 2.2px 6px rgba(0, 0, 0, 0.022), 0 4.4px 12.2px rgba(0, 0, 0, 0.028), 0 9.1px 25.2px rgba(0, 0, 0, 0.034), 0 25px 69px rgba(0, 0, 0, 0.05);
 }
-
-    @font-face {
-        font-family: 'ranchoregular';
-        src: url('../../fonts/ranchoregular/Rancho-Regular-webfont.eot');
-        src: url('../../fonts/ranchoregular/Rancho-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/ranchoregular/Rancho-Regular-webfont.woff2') format('woff2'), url('../../fonts/ranchoregular/Rancho-Regular-webfont.woff') format('woff'), url('../../fonts/ranchoregular/Rancho-Regular-webfont.ttf') format('truetype'), url('../../fonts/ranchoregular/Rancho-Regular-webfont.svg#ranchoregular') format('svg');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'rochesterregular';
-        src: url('../../fonts/rochesterregular/Rochester-Regular-webfont.eot');
-        src: url('../../fonts/rochesterregular/Rochester-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/rochesterregular/Rochester-Regular-webfont.woff2') format('woff2'), url('../../fonts/rochesterregular/Rochester-Regular-webfont.woff') format('woff'), url('../../fonts/rochesterregular/Rochester-Regular-webfont.ttf') format('truetype'), url('../../fonts/rochesterregular/Rochester-Regular-webfont.svg#rochesterregular') format('svg');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'sevillanaregular';
-        src: url('../../fonts/sevillanaregular/Sevillana-Regular-webfont.eot');
-        src: url('../../fonts/sevillanaregular/Sevillana-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/sevillanaregular/Sevillana-Regular-webfont.woff2') format('woff2'), url('../../fonts/sevillanaregular/Sevillana-Regular-webfont.woff') format('woff'), url('../../fonts/sevillanaregular/Sevillana-Regular-webfont.ttf') format('truetype'), url('../../fonts/sevillanaregular/Sevillana-Regular-webfont.svg#sevillanaregular') format('svg');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'berkshire_swashregular';
-        src: url('../../fonts/berkshire_swashregular/berkshireswash-regular-webfont.eot');
-        src: url('../../fonts/berkshire_swashregular/berkshireswash-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/berkshire_swashregular/berkshireswash-regular-webfont.woff2') format('woff2'), url('../../fonts/berkshire_swashregular/berkshireswash-regular-webfont.woff') format('woff'), url('../../fonts/berkshire_swashregular/berkshireswash-regular-webfont.ttf') format('truetype'), url('../../fonts/berkshire_swashregular/berkshireswash-regular-webfont.svg#berkshire_swashregular') format('svg');
-        font-weight: normal;
-        font-style: normal;
-    }
-
 
     .tete {
         background-color: $color-primary;
@@ -81,8 +50,11 @@ $color-primary:rgb(87,156,135);
 
     #LNE {
         background-color: rgb(252,223,219);
-        font-family: 'ranchoregular';
         color: rgb(60,18,24);
+
+        h2 {
+            font-family: 'ranchoregular';
+        }
 
         img {
             margin-left: auto;
@@ -92,12 +64,12 @@ $color-primary:rgb(87,156,135);
 
     #LCALF {
         background-color: rgb(255,245,254);
-        font-family: 'rochesterregular';
 
         h2 {
             background: linear-gradient(to right, #c77412 0%, #7738cf 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            font-family: 'rochesterregular';
         }
 
         h3 {
@@ -107,12 +79,12 @@ $color-primary:rgb(87,156,135);
 
     #LDDP {
         background-color: rgb(249,249,249);
-        font-family: 'sevillanaregular';
 
         h2 {
             background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            font-family: 'sevillanaregular';
         }
 
         h3 {
@@ -122,12 +94,12 @@ $color-primary:rgb(87,156,135);
 
     #LPDG {
         background-color: rgb(253,253,253);
-        font-family: 'berkshire_swashregular';
 
         h2 {
             background: linear-gradient(to right, #337500 0%, #b6db9a 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            font-family: 'berkshire_swashregular';
         }
 
         h3 {
@@ -186,21 +158,29 @@ h1{
         margin-right: 100px;
     }
 
-    h2 {
+    h3 {
         text-align: center;
         margin-top: 50px;
         margin-bottom: -10px;
+        font-family: 'blokletters_balpenbalpen';
+        font-size:30px;
+    }
+
+    p {
+        font-family: 'blokletters_balpenbalpen';
+        font-size: 20px;
     }
 
     footer {
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        margin-bottom:30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+
         #img-petit {
             height: 45px;
-            margin:0px;
-            margin-right:10px;
+            margin: 0px;
+            margin-right: 10px;
         }
 
         h3 {
