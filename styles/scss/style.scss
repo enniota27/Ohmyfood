@@ -72,8 +72,14 @@ $color-primary:rgb(87,156,135);
             font-family: 'rochesterregular';
         }
 
-        h3 {
+        .orange{
             color: #c77412;
+        }
+        .violet{
+            color:#7738cf;
+        }
+        .bleu{
+            color:#0080ff;
         }
     }
 
@@ -105,6 +111,7 @@ $color-primary:rgb(87,156,135);
         h3 {
             color: #b6db9a;
         }
+
     }
 }
 
@@ -168,7 +175,7 @@ h1{
 
     p {
         font-family: 'blokletters_balpenbalpen';
-        font-size: 20px;
+        font-size: 15px;
     }
 
     footer {
@@ -186,5 +193,64 @@ h1{
         h3 {
             font-size: 35px;
         }
+    }
+}
+
+.box{
+    display: flex;
+    ;:first-child{
+        flex:1;
+        margin-right: 15px;
+    }
+}
+
+/*TRAIT DE SEPARATION*/
+#LNE.menu{
+    h3{
+        background: no-repeat left url("../../images/ligne1.png"), no-repeat right url("../../images/ligne1.png");
+    }
+}
+
+#LCALF.menu{
+    .orange h3{
+        margin-left: -70px;
+        margin-right: -70px;
+        background: no-repeat left url("../../images/ligne2.png"), no-repeat right url("../../images/ligne3.png");
+    }
+    .violet h3{
+        margin-left: -70px;
+        margin-right: -70px;
+        background: no-repeat left url("../../images/ligne4.png"), no-repeat right url("../../images/ligne5.png");
+    }
+    .bleu h3{
+        margin-left: -70px;
+        margin-right: -70px;
+        background: no-repeat left url("../../images/ligne6.png"), no-repeat right url("../../images/ligne7.png");
+    }
+}
+
+#LDDP.menu{
+    .trait-bleu-fonce{
+        margin-left: 20px;
+        margin-right: 20px;
+        background: no-repeat left url("../../images/ligne8.png"), no-repeat right url("../../images/ligne9.png");
+    }
+    .trait-bleu{
+        margin-left: 20px;
+        margin-right: 20px;
+        background: no-repeat left url("../../images/ligne10.png"), no-repeat right url("../../images/ligne11.png");
+    }
+    .trait-bleu-clair{
+        margin-left: 20px;
+        margin-right: 20px;
+        background: no-repeat left url("../../images/ligne12.png"), no-repeat right url("../../images/ligne13.png");
+    }
+}
+
+#LPDG.menu{
+    h3{
+        margin-left: 30px;
+        margin-right: 30px;
+        background: no-repeat left url("../../images/ligne14.png"), no-repeat right url("../../images/ligne15.png");
     }
 }

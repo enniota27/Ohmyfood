@@ -92,8 +92,14 @@
   -webkit-text-fill-color: transparent;
   font-family: "rochesterregular";
 }
-.container #LCALF h3 {
+.container #LCALF .orange {
   color: #c77412;
+}
+.container #LCALF .violet {
+  color: #7738cf;
+}
+.container #LCALF .bleu {
+  color: #0080ff;
 }
 .container #LDDP {
   background-color: #f9f9f9;
@@ -176,7 +182,7 @@ h1 {
 }
 .menu p {
   font-family: "blokletters_balpenbalpen";
-  font-size: 20px;
+  font-size: 15px;
 }
 .menu footer {
   display: flex;
@@ -191,6 +197,57 @@ h1 {
 }
 .menu footer h3 {
   font-size: 35px;
+}
+
+.box {
+  display: flex;
+}
+.box :first-child {
+  flex: 1;
+  margin-right: 15px;
+}
+
+/*TRAIT DE SEPARATION*/
+#LNE.menu h3 {
+  background: no-repeat left url("../../images/ligne1.png"), no-repeat right url("../../images/ligne1.png");
+}
+
+#LCALF.menu .orange h3 {
+  margin-left: -70px;
+  margin-right: -70px;
+  background: no-repeat left url("../../images/ligne2.png"), no-repeat right url("../../images/ligne3.png");
+}
+#LCALF.menu .violet h3 {
+  margin-left: -70px;
+  margin-right: -70px;
+  background: no-repeat left url("../../images/ligne4.png"), no-repeat right url("../../images/ligne5.png");
+}
+#LCALF.menu .bleu h3 {
+  margin-left: -70px;
+  margin-right: -70px;
+  background: no-repeat left url("../../images/ligne6.png"), no-repeat right url("../../images/ligne7.png");
+}
+
+#LDDP.menu .trait-bleu-fonce {
+  margin-left: 20px;
+  margin-right: 20px;
+  background: no-repeat left url("../../images/ligne8.png"), no-repeat right url("../../images/ligne9.png");
+}
+#LDDP.menu .trait-bleu {
+  margin-left: 20px;
+  margin-right: 20px;
+  background: no-repeat left url("../../images/ligne10.png"), no-repeat right url("../../images/ligne11.png");
+}
+#LDDP.menu .trait-bleu-clair {
+  margin-left: 20px;
+  margin-right: 20px;
+  background: no-repeat left url("../../images/ligne12.png"), no-repeat right url("../../images/ligne13.png");
+}
+
+#LPDG.menu h3 {
+  margin-left: 30px;
+  margin-right: 30px;
+  background: no-repeat left url("../../images/ligne14.png"), no-repeat right url("../../images/ligne15.png");
 }
 
 /*# sourceMappingURL=style.css.map */
