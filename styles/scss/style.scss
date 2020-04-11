@@ -24,7 +24,10 @@ $color-primary:rgb(87,156,135);
         height: 75px;
         display: flex;
         justify-content: space-between;
-        margin-top: 75px;
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+        margin-top:85px;
 
         a {
             color: rgb(253,203,70);

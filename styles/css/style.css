@@ -50,7 +50,10 @@
   height: 75px;
   display: flex;
   justify-content: space-between;
-  margin-top: 75px;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  margin-top: 85px;
 }
 .pied a {
   color: #fdcb46;
