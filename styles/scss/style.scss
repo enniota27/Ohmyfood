@@ -10,6 +10,7 @@ $color-primary:rgb(87,156,135);
         background-color: $color-primary;
         height: 150px;
         text-align: center;
+        margin-bottom: 40px;
 
         .logo {
             height: 75px;
@@ -18,6 +19,7 @@ $color-primary:rgb(87,156,135);
     }
 
     .pied {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         background-color: $color-primary;
         height: 75px;
         display: flex;
@@ -38,8 +40,9 @@ $color-primary:rgb(87,156,135);
 
     article {
         margin-top: 100px;
-        height: 600px;
+        height: 700px;
         width: 525px;
+        margin:60px;
         text-align: center;
         font-size: 30px;
         display: flex;
@@ -55,10 +58,18 @@ $color-primary:rgb(87,156,135);
         h2 {
             font-family: 'ranchoregular';
         }
+        .titre{
+            text-transform: uppercase;
+            font-family: 'ranchoregular';
+        }
 
         img {
             margin-left: auto;
             margin-right: auto;
+        }
+
+        #logo-note{
+            height: 80px;
         }
     }
 
@@ -71,6 +82,9 @@ $color-primary:rgb(87,156,135);
             -webkit-text-fill-color: transparent;
             font-family: 'rochesterregular';
         }
+        .titre{
+            font-family: 'rochesterregular';
+        }
 
         .orange{
             color: #c77412;
@@ -80,6 +94,7 @@ $color-primary:rgb(87,156,135);
         }
         .bleu{
             color:#0080ff;
+            margin-bottom: 70px;
         }
     }
 
@@ -91,6 +106,10 @@ $color-primary:rgb(87,156,135);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-family: 'sevillanaregular';
+        }
+
+        .titre{
+            font-family: 'blokletters_balpenbalpen';
         }
 
         h3 {
@@ -111,6 +130,10 @@ $color-primary:rgb(87,156,135);
         h3 {
             color: #b6db9a;
         }
+        .titre{
+            font-family: 'blokletters_balpenbalpen';
+
+        }
 
     }
 }
@@ -120,6 +143,7 @@ $color-primary:rgb(87,156,135);
     }
 
 .button {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     text-decoration: none;
     background-color: $color-primary;
     height: 60px;
@@ -128,7 +152,7 @@ $color-primary:rgb(87,156,135);
     font-size: 35px;
     text-align: center;
     margin: auto;
-    margin-top: 75px;
+    margin-top: 25px;
     border-radius: 10px;
     top: 50%;
     display: flex;
@@ -149,14 +173,15 @@ h1{
     font-size: 30px;
     border-left: 20px;
     @include shadows;
-
+    
     header {
         text-align: center;
         margin-top: 50px;
 
         h2 {
-            margin-top: -10px;
+            margin-top: 10px;
             font-size: 55px;
+            margin-bottom: 100px;
         }
     }
 
@@ -178,6 +203,10 @@ h1{
         font-size: 15px;
     }
 
+    .dessert{
+        line-height: 40px;
+    }
+
     footer {
         display: flex;
         justify-content: center;
@@ -194,6 +223,10 @@ h1{
             font-size: 35px;
         }
     }
+}
+
+h1{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .box{
