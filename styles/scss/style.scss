@@ -117,18 +117,35 @@ $color-primary:rgb(87,156,135);
 
 /* BOUTTON */
     .btn {
+        text-align: left;
+        padding-left: 60px;
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         background-color: $color-primary;
         height: 80px;
-        width: 400px;
+        width: 450px;
         color: rgb(253,203,70);
         font-size: 45px;
         display: block;
         margin: auto;
         margin-top: 25px;
         border-radius: 10px;
-        border:none;
+        border:100px;
+        text-align:left;
+        &:after{
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: bottom;
+            animation: ellipsis steps(4,end) 2s infinite;
+            content: "...";
+            width: 0px;
+            @keyframes ellipsis {
+                to {
+                  width: 1em;    
+                }
+            }
+        }
     }
+      
 /* ----------------------------------------------- */
 
 .secouer{
