@@ -152,6 +152,17 @@ $color-primary:rgb(87,156,135);
     }
   }
 
+  article{
+    &:hover{
+        opacity: .5;
+        *{
+            transform: scale(1.3);
+        }
+        
+    }
+  }
+
+
 /* PAGE DU MENU */
     .box{
         display: flex;

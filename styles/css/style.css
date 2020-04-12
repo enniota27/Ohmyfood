@@ -209,6 +209,13 @@ h1 {
     transform: rotate(2deg);
   }
 }
+article:hover {
+  opacity: 0.5;
+}
+article:hover * {
+  transform: scale(1.3);
+}
+
 /* PAGE DU MENU */
 .box {
   display: flex;
