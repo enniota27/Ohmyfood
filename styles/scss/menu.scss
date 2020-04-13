@@ -1,0 +1,81 @@
+h1{
+    font-size:50px;
+    text-align:center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.box{
+    display: flex;
+    ;:first-child{
+        flex:1;
+        margin-right: 15px;
+    }
+}
+.menu {
+    font-size: 30px;
+    border-left: 20px;
+    @include shadows;
+    header {
+        text-align: center;
+        margin-top: 50px;
+        h2 {
+            margin-top: 10px;
+            font-size: 55px;
+            margin-bottom: 100px;
+        }
+    }
+    > * {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    h3 {
+        display: inline-block;
+        font-family: 'blokletters_balpenbalpen', Arial, Helvetica, sans-serif;
+        font-size:30px;
+    }
+    p {
+        font-family: 'blokletters_balpenbalpen', Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    .dessert{
+        line-height: 40px;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        #img-petit {
+            height: 45px;
+            margin: 0px;
+            margin-right: 10px;
+        }
+        h3 {
+            font-size: 35px;
+        }
+    }
+}
+
+#LNE.menu{
+    @include souligne();
+}
+
+#LCALF.menu{
+    .orange{
+        @include souligne(#c77412);
+    }
+    .violet{
+        @include souligne(#7738cf);
+    }
+    .bleu{
+        @include souligne(#0080ff);
+    }
+}
+
+#LDDP.menu{
+    @include souligne();
+}
+
+#LPDG.menu{
+    @include souligne(#87D161);
+}
