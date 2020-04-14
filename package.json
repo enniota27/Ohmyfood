@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch styles/scss/style.scss:styles/css/style.css"
+    "sass": "sass --watch styles/scss/style.scss:styles/css/style.css",
+    "prefix": "postcss styles/css/style.css -use autoprefixer styles/css/prefixed/"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Antoine NAGY",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
 }

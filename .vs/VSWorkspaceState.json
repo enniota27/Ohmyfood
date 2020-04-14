@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\images",
     "\\styles",
     "\\styles\\css",
     "\\styles\\scss"
   ],
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }
