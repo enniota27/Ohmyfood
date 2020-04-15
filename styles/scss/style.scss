@@ -86,3 +86,25 @@ a {
         
     }
   }
+
+  @media all and (max-width:768px){
+    article{
+        margin: 0px;
+    }
+    .menu{
+        >*{
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+    }
+    .trait,.trait-bleu-fonce,.trait-bleu,.trait-bleu-clair{
+        visibility: hidden;
+        h3{
+            visibility:visible;
+        }
+    }
+    .box p:nth-child(2){
+        font-weight: bold;
+    }
+    
+}

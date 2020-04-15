@@ -382,4 +382,26 @@ article:hover * {
   transition: transform 330ms ease-in-out;
 }
 
+@media all and (max-width: 768px) {
+  article {
+    margin: 0px;
+  }
+
+  .menu > * {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .trait, .trait-bleu-fonce, .trait-bleu, .trait-bleu-clair {
+    visibility: hidden;
+  }
+  .trait h3, .trait-bleu-fonce h3, .trait-bleu h3, .trait-bleu-clair h3 {
+    visibility: visible;
+  }
+
+  .box p:nth-child(2) {
+    font-weight: bold;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
