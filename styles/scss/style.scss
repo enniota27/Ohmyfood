@@ -87,24 +87,36 @@ a {
     }
   }
 
-  @media all and (max-width:768px){
+  @media all and (max-device-width:768px){
     article{
-        margin: 0px;
+        size: 50%;
     }
     .menu{
+        width: 100%;
         >*{
-            margin-left: 25px;
-            margin-right: 25px;
+            margin-left: 5px;
+            margin-right: 5px;
         }
     }
     .trait,.trait-bleu-fonce,.trait-bleu,.trait-bleu-clair{
         visibility: hidden;
         h3{
             visibility:visible;
+            display: inline;
         }
     }
     .box p:nth-child(2){
         font-weight: bold;
     }
+    h1{
+        font-size: 30px;
+    }
+    .pied{
+        a{
+            font-size: 20px;
+
+        }
+    }
+    
     
 }
