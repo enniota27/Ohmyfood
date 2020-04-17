@@ -88,8 +88,11 @@ a {
   }
 
   @media all and (max-device-width:768px){
-    article{
-        size: 50%;
+    .container article{
+        width: 320px;
+        height: 500px;
+        margin: 0;
+        margin-bottom: 50px;
     }
     .menu{
         width: 100%;
@@ -99,6 +102,7 @@ a {
         }
     }
     .trait,.trait-bleu-fonce,.trait-bleu,.trait-bleu-clair{
+        margin: 0px;
         visibility: hidden;
         h3{
             visibility:visible;
@@ -116,6 +120,10 @@ a {
             font-size: 20px;
 
         }
+    }
+    .btn{
+        width: 320px;
+        font-size: 28px;
     }
     
     

@@ -119,12 +119,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* LA NOTE ENCHANTEE */
-  /* LE CHIC A LA FRANCAISE */
-  /* LE DELICE DES PAPILLES */
-  /* LA PALETTE DU GOUT */
 }
-.container article {
+
+article {
   margin-top: 100px;
   height: 700px;
   width: 525px;
@@ -136,77 +133,86 @@
   justify-content: center;
   box-shadow: 0 0.9px 2.4px rgba(0, 0, 0, 0.016), 0 2.2px 6px rgba(0, 0, 0, 0.022), 0 4.4px 12.2px rgba(0, 0, 0, 0.028), 0 9.1px 25.2px rgba(0, 0, 0, 0.034), 0 25px 69px rgba(0, 0, 0, 0.05);
 }
-.container h3 {
+
+h3 {
   font-size: 45px;
 }
-.container #LNE {
+
+/* LA NOTE ENCHANTEE */
+#LNE {
   background-color: #fcdfdb;
   color: #3c1218;
 }
-.container #LNE h2 {
+#LNE h2 {
   font-family: "ranchoregular", Arial, Helvetica, sans-serif;
 }
-.container #LNE .titre {
+#LNE .titre {
   text-transform: uppercase;
   font-family: "ranchoregular", Arial, Helvetica, sans-serif;
 }
-.container #LNE img {
+#LNE img {
   margin-left: auto;
   margin-right: auto;
 }
-.container #LNE #logo-note {
+#LNE #logo-note {
   height: 80px;
 }
-.container #LCALF {
+
+/* LE CHIC A LA FRANCAISE */
+#LCALF {
   background-color: #fff5fe;
 }
-.container #LCALF h2 {
+#LCALF h2 {
   background: linear-gradient(to right, #c77412 0%, #7738cf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "rochesterregular", Arial, Helvetica, sans-serif;
 }
-.container #LCALF .titre {
+#LCALF .titre {
   font-family: "rochesterregular", Arial, Helvetica, sans-serif;
 }
-.container #LCALF .orange {
+#LCALF .orange {
   color: #c77412;
 }
-.container #LCALF .violet {
+#LCALF .violet {
   color: #7738cf;
 }
-.container #LCALF .bleu {
+#LCALF .bleu {
   color: #0080ff;
   margin-bottom: 70px;
 }
-.container #LDDP {
+
+/* LE DELICE DES PAPILLES */
+#LDDP {
   background-color: #f9f9f9;
 }
-.container #LDDP h2 {
+#LDDP h2 {
   background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "sevillanaregular", Arial, Helvetica, sans-serif;
 }
-.container #LDDP .titre {
+#LDDP .titre {
   font-family: "blokletters_balpenbalpen", Arial, Helvetica, sans-serif;
 }
-.container #LDDP h3 {
+#LDDP h3 {
   color: #330867;
 }
-.container #LPDG {
+
+/* LA PALETTE DU GOUT */
+#LPDG {
   background-color: #fdfdfd;
 }
-.container #LPDG h2 {
+#LPDG h2 {
   background: linear-gradient(to right, #337500 0%, #b6db9a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "berkshire_swashregular", Arial, Helvetica, sans-serif;
 }
-.container #LPDG h3 {
+#LPDG h3 {
   color: #b6db9a;
 }
-.container #LPDG .titre {
+#LPDG .titre {
   font-family: "blokletters_balpenbalpen", Arial, Helvetica, sans-serif;
 }
 
@@ -304,7 +310,7 @@ h1 {
 }
 
 #LDDP.menu h3 {
-  background: linear-gradient(to top, #000 0%, #000 5%, transparent 5.01%) no-repeat left bottom;
+  background: linear-gradient(to top, #33459B 0%, #33459B 5%, transparent 5.01%) no-repeat left bottom;
   background-size: 0 100%;
   transition: background-size 0.5s;
 }
@@ -383,8 +389,11 @@ article:hover * {
 }
 
 @media all and (max-device-width: 768px) {
-  article {
-    size: 50%;
+  .container article {
+    width: 320px;
+    height: 500px;
+    margin: 0;
+    margin-bottom: 50px;
   }
 
   .menu {
@@ -396,6 +405,7 @@ article:hover * {
   }
 
   .trait, .trait-bleu-fonce, .trait-bleu, .trait-bleu-clair {
+    margin: 0px;
     visibility: hidden;
   }
   .trait h3, .trait-bleu-fonce h3, .trait-bleu h3, .trait-bleu-clair h3 {
@@ -413,6 +423,11 @@ article:hover * {
 
   .pied a {
     font-size: 20px;
+  }
+
+  .btn {
+    width: 320px;
+    font-size: 28px;
   }
 }
 
