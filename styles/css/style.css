@@ -394,6 +394,10 @@ article:hover * {
     height: 500px;
     margin: 0;
     margin-bottom: 50px;
+    font-size: 20px;
+  }
+  .container article .titre {
+    font-size: 25px;
   }
 
   .menu {
@@ -421,6 +425,9 @@ article:hover * {
     font-size: 30px;
   }
 
+  .pied {
+    height: 60px;
+  }
   .pied a {
     font-size: 20px;
   }
@@ -428,6 +435,20 @@ article:hover * {
   .btn {
     width: 320px;
     font-size: 28px;
+  }
+}
+@media all and (max-width: 768px) {
+  .trait, .trait-bleu-fonce, .trait-bleu, .trait-bleu-clair {
+    margin: 0px;
+    visibility: hidden;
+  }
+  .trait h3, .trait-bleu-fonce h3, .trait-bleu h3, .trait-bleu-clair h3 {
+    visibility: visible;
+    display: inline;
+  }
+
+  .box p:nth-child(2) {
+    font-weight: bold;
   }
 }
 
